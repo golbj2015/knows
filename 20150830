@@ -82,3 +82,16 @@ start---------------------------------------------------------------------->
   点击劫持（CLICKJACKING）与X-FRAME-OPTIONS HEADER
   http://www.myhack58.com/Article/html/3/7/2014/43315.htm
 end------------------------------------------------------------------------>
+
+start---------------------------------------------------------------------->
+155741
+
+end------------------------------------------------------------------------>
+
+start---------------------------------------------------------------------->
+155825
+GO:func
+How then does Go deal with normal errors by default ? The Go way to handle errors is for
+functions and methods to return an error object as their only or last return value—or nil if no error
+occurred—and for calling functions to always check the error they receive. 
+end------------------------------------------------------------------------>
