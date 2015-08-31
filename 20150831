@@ -1,0 +1,42 @@
+
+start---------------------------------------------------------------------->
+084443
+开发语言:go:类型
+   bool   不支持类型转换
+   int8 byte int16 int uint uintptr
+   float32 float64
+       比较: math.Abs(f1,f2)<p
+   complex64 complex128
+   string
+       x+y len(s) s[i] 标准库strings
+       
+   rune  unicode字符
+   error
+
+   pointer
+   array
+     数组是一个值类型
+     声明： [32]byte [2*n] struct{x,y int32} [100]*float64 [3][5]int
+        arr := [5]int{1,2,3,4,5}
+  
+   slice
+     切片指针类型  数据结构包括 一个指向原始数组的指针 ，元素个数，存储空间
+     创建：myarray[first:last]
+           myslice1 := make([]int 5)
+           myslice2 := make([]int 5,10)
+           myslice3 := []int{1,2,3,4,5}
+  
+     遍历：
+         for i:=0;i<len(myslice);i++{
+            fmt.Println(i,myslice[i])
+         }
+         for i,v := rang mySlice {
+         } 
+     动态：
+        myslice = append(myslice,myslice2...)
+        
+     复制： copy(sl1,sl2) sl2->sl1 按照最小元素复制
+  
+
+  
+end------------------------------------------------------------------------>
