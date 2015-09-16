@@ -1,0 +1,34 @@
+
+start---------------------------------------------------------------------->
+175627
+php5.6|安装===Donot Touch Me===
+
+  ubuntu php升级php5.5/5.6
+  http://phpave.com/upgrade-php-5-3-php-5-5-ubuntu-12-04-lts/
+
+     
+	sudo apt-get update && sudo apt-get install python-software-properties
+	添加php5.5的ppa
+	 
+	sudo add-apt-repository ppa:ondrej/php5
+	如果你想保守一点，只升级到php5.4稳定版那么可以添加下面这个ppa
+	 
+	sudo add-apt-repository ppa:ondrej/php5-oldstable
+	//或者使用下面这个升级到php5.6
+	sudo add-apt-repository ppa:ondrej/php5-5.6
+	如果执行上面的代码提示“add-apt-repository not found”，可以执行下面的代码进行修复
+ 
+ 
+	sudo apt-get install software-properties-common python-software-properties
+	最后执行一下更新和升级，这一步可能会比较花费时间
+ 
+	sudo apt-get update && sudo apt-get dist-upgrade
+	 
+	升级完成之后
+	1.如果你的web根目录不是/var/www那么你需要在/etc/apache2/apache2.conf重新进行配置；
+	2.如果你安装了php5-xdebug那么在升级之后php无法找到这个模块，你只要彻底删除这个模块然后重新安装即可
+ 
+	sudo apt-get remove --purge php5-xdebug
+	 
+	sudo apt-get install php5-xdebug
+end------------------------------------------------------------------------>
