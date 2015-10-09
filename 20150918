@@ -1,0 +1,30 @@
+
+start---------------------------------------------------------------------->
+104145
+解决NGINX+PHP-FPM failed to ptrace(PEEKDATA) Input/output error出错问题===Donot Touch Me===
+
+   29-Mar-2014 22:40:10] ERROR: failed to ptrace(PEEKDATA) pid 4276: Input/output error (5)
+ 
+
+网上也找了很多方法，很多人说是rlimit_files 打开文件数的问题，但是觉得不太靠谱，最后找到鬼佬的话，看上去还有几分道理。
+
+http://serverfault.com/questions/406532/i-o-error-with-php5-fpm-ptracepeekdata-failed
+
+It appears you have request_slowlog_timeout enabled. This normally takes any request longer than N seconds, logs that it was taking a long time, then logs a stack trace of the script so you can see what it was doing that was taking so long.
+
+In your case, the stack trace (to determine what the script is doing) is failing. If you’re running out of processes, it is because either:
+
+After php-fpm stops the process to trace it, the process fails to resume because of the error tracing it
+The process is resuming but continues to run forever.
+My first guess would be to disable request_slowlog_timeout. Since it’s not working right, it may be doing more harm than good. If this doesn’t fix the issue of running out of processes, then set the php.ini max_execution_time to something that will kill the script for sure.
+
+ 
+
+看样子是因为我打开了slowlog  然后，再设置 了 request_slowlog_timeout 这个参数，，所以后php 没有执行完就出错了。。
+
+上面解决的办法是：
+
+禁用 php-fpm.conf 里的  request_slowlog_timeout  和 slowlog  ，然后，修改 php.ini 里的  max_execution_time 参数
+
+
+end------------------------------------------------------------------------>

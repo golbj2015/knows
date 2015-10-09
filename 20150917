@@ -1,0 +1,38 @@
+
+start---------------------------------------------------------------------->
+124342
+go检查文件或目录是否存在===Donot Touch Me===
+
+// 如果由 filename 指定的文件或目录存在则返回 true，否则返回 false
+func Exist(filename string) bool {
+    _, err := os.Stat(filename)
+    return err == nil || os.IsExist(err)
+}
+end------------------------------------------------------------------------>
+
+start---------------------------------------------------------------------->
+125858
+go 获取文件名称 扩展名===Donot Touch Me===
+package main
+
+import (
+	"fmt"
+	"path"
+	"strings"
+)
+
+func main() {
+	fullFilename := "/Users/itfanr/Documents/test.txt"
+	fmt.Println("fullFilename =", fullFilename)
+	var filenameWithSuffix string
+	filenameWithSuffix = path.Base(fullFilename)
+	fmt.Println("filenameWithSuffix =", filenameWithSuffix)
+	var fileSuffix string
+	fileSuffix = path.Ext(filenameWithSuffix)
+	fmt.Println("fileSuffix =", fileSuffix)
+
+	var filenameOnly string
+	filenameOnly = strings.TrimSuffix(filenameWithSuffix, fileSuffix)
+	fmt.Println("filenameOnly =", filenameOnly)
+}
+end------------------------------------------------------------------------>

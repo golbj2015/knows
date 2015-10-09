@@ -32,3 +32,27 @@ php5.6|安装===Donot Touch Me===
 	 
 	sudo apt-get install php5-xdebug
 end------------------------------------------------------------------------>
+
+
+start---------------------------------------------------------------------->
+181858
+phpfmt php格式化工具 sublime===Donot Touch Me===
+
+    setting-user
+
+      {
+	"autocomplete": true,
+	"debug": true,
+	"enable_auto_align": true,
+	"format_on_save": false,
+	"indent_with_space": true,
+	"passes":
+	[
+	],
+	"php_bin": "/usr/bin/php",
+	"psr1": true,
+	"psr1_naming": true,
+	"psr2": true,
+	"version": 4
+	}
+end------------------------------------------------------------------------>
