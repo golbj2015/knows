@@ -1,0 +1,9 @@
+
+start---------------------------------------------------------------------->
+122131
+mysql|install instance mysql_install_db mysqld_safe===Donot Touch Me===
+  
+  scripts/mysql_install_db --basedir=... --datadir=.... --user=mysql
+
+ /bin/mysqld_safe --defaults-file=/etc/my3306.cnf --basedir=.... --user=work &
+end------------------------------------------------------------------------>

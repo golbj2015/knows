@@ -1,0 +1,16 @@
+
+start---------------------------------------------------------------------->
+194622
+mysql|innobackupex|备份 还原===Donot Touch Me===
+  Creating a Backup with innobackupex
+   
+     innobackupex --defaults-file=/tmp/other-my.cnf --user=DBUSER --password=DBUSERPASS /path/to/BACKUP-DIR/
+
+  Preparing a Full Backup with innobackupex
+
+     innobackupex --apply-log --use-memory=4G /path/to/BACKUP-DIR
+
+  Restoring a Full Backup with innobackupex
+     
+    innobackupex --copy-back /path/to/BACKUP-DIR
+end------------------------------------------------------------------------>

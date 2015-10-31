@@ -21,3 +21,11 @@ mysql|pt-query-digest查询日志分析工具===Donot Touch Me===
 
    官方文档：http://www.percona.com/doc/percona-toolkit/2.2/pt-query-digest.html
 end------------------------------------------------------------------------>
+
+start---------------------------------------------------------------------->
+152852
+mysql|实时抓包sql并分析vc-mysql-sniffer===Donot Touch Me===
+
+    ./vc-mysql-sniffer >slow
+    pt-query-digest ./slow
+end------------------------------------------------------------------------>
