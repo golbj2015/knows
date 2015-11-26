@@ -1,0 +1,11 @@
+
+start---------------------------------------------------------------------->
+181937
+服务器｜numa===Donot Touch Me===
+
+   dmesg | grep -i numa
+   
+   numactl --interleave=all /home/work/app/percona-5.5.33/bin/mysqld_safe --defaults-file=/home/work/etc/my3302.cnf --basedir=/home/work/app/percona-5.5.33 --user=work &
+   numactl --cpunodebind=1 --localalloc /home/work/app/percona-5.5.33/bin/mysqld_safe --defaults-file=/home/work/etc/my3309.cnf --basedir=/home/work/app/percona-5.5.33 --user=work &
+   numactl --physcpubind=1,2,3,4,5,12,13,14,15,16,17,6,7,8,9,10,11,18,19,20,21,22,23 --interleave=all /opt/tiger/app/mysql/bin/mysqld_safe --defaults-file=/opt/tiger/etc/my3306.cnf --user=mysql &
+end------------------------------------------------------------------------>

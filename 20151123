@@ -1,0 +1,20 @@
+
+start---------------------------------------------------------------------->
+161639
+mysql|grant|权限===Donot Touch Me===
+
+	GRANT
+		grant all privileges on *.* to jack@'localhost' identified by "jack" with grant option;
+	flush
+		flush privileges;
+	查看权限
+		show grants for 'jack'@'%';
+	回收权限
+		revoke delete on *.* from 'jack'@'localhost';
+	删除用户
+		drop user 'jack'@'localhost';
+	修改密码
+		SET PASSWORD FOR 'root'@'localhost' = PASSWORD('123456');
+	创建用户
+		 grant create user on *.* to ‘p1′@’localhost’;
+end------------------------------------------------------------------------>
