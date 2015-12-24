@@ -1,0 +1,25 @@
+
+start---------------------------------------------------------------------->
+105540
+mysql|MySQL InnoDB的存储结构总结===Donot Touch Me===
+  http://blog.csdn.net/beiigang/article/details/42175995
+end------------------------------------------------------------------------>
+
+start---------------------------------------------------------------------->
+114934
+mysql|验证MySQL主从一致性(pt-table-checksum&pt-table-sync)===Donot Touch Me===
+   http://www.linuxidc.com/Linux/2014-07/104034.htm
+end------------------------------------------------------------------------>
+
+start---------------------------------------------------------------------->
+153910
+mysql|pt-table-checksum使用实践===Donot Touch Me===
+  http://www.cnblogs.com/gomysql/p/3662264.html
+end------------------------------------------------------------------------>
+
+start---------------------------------------------------------------------->
+162919
+MYSQL|pt-table-checksum===Donot Touch Me===
+pt-table-checksum  --socket=/home/work/data/tmp/mysql3320.sock --user=root  --password=l5pcIVYpvMDN600FMZcZZ2MYEKWxEIWh --databases=testdb --nocheck-replication-filter --no-check-binlog-format --recursion-method=hosts
+
+end------------------------------------------------------------------------>
