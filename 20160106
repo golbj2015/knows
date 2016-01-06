@@ -1,0 +1,7 @@
+
+start---------------------------------------------------------------------->
+144859
+mysql|mysqldump|导出数据===Donot Touch Me===
+
+　　mysqldump -uroot -p xm_opm_data mo_mysql_status --where="create_time > '2015-11-11 00:00:00' and create_time <= '2015-11-13 00:00:00'" >/tmp/mo_mysql_status_11.sql
+end------------------------------------------------------------------------>
