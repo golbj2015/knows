@@ -1,5 +1,2 @@
-shell|获取外网出口IP
-
-   curl http://members.3322.org/dyndns/getip
-   or
-   curl http://ip.cn/
+mac|php|安装PHP
+  http://yansu.org/2013/12/11/lamp-in-mac.html
