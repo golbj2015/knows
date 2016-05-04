@@ -1,0 +1,7 @@
+
+start---------------------------------------------------------------------->
+140356
+SHELL|rsync|同步文件===Donot Touch Me===
+
+  rsync -av --exclude-from '/Users/gaolei/work/php/exclude.txt' user@ip:/dir dest
+end------------------------------------------------------------------------>
