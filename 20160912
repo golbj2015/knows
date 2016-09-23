@@ -5,3 +5,12 @@ shell|nc|传输文件
    接收端：nc -l 1234 > test.txt   
    发送端：nc 192.168.xxx 1234 < test.txt
 end------------------------------------------------------------------------>
+
+start---------------------------------------------------------------------->
+201009
+shell|sed|sed extra characters at the end of p command===Donot Touch Me===
+
+  在Mac下直接使用sed -i 会提示extra characters at the end of p command错误，可以通过在-i后面增加一个空字符串即可。例如：
+
+  sed -i "" "sed-command" file
+end------------------------------------------------------------------------>
