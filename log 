@@ -1,2 +1,5 @@
-python|json输出显示中文
-  json.dumps(data, ensure_ascii=False)
+python | 编码问题|utf-8
+
+ import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')｀
