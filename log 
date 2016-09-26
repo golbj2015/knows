@@ -1,5 +1,8 @@
-python | 编码问题|utf-8
-
- import sys
-reload(sys)
-sys.setdefaultencoding('utf-8')｀
+python|字符串位置
+  
+   s = '123456'
+   s.find('4')
+   
+   out:4
+ 
+       
