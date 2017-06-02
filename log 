@@ -1,1 +1,11 @@
-testkn
+python|枚举|enum
+  
+  from enum import IntEnum, unique
+  @unique
+  class Style(IntEnum):
+      NORMAL = 0
+      TONE   = 1
+  
+  调用: Style.TONE
+
+  
