@@ -1,11 +1,4 @@
-python|枚举|enum
+python|内置函数locals() globals()
   
-  from enum import IntEnum, unique
-  @unique
-  class Style(IntEnum):
-      NORMAL = 0
-      TONE   = 1
-  
-  调用: Style.TONE
-
-  
+   locals() 方法内部
+   globals() 全局的变量
