@@ -21,3 +21,17 @@ python|内置函数locals() globals()===Donot Touch Me===
    locals() 方法内部
    globals() 全局的变量
 end------------------------------------------------------------------------>
+
+start---------------------------------------------------------------------->
+165727
+python|命令行参数|ArgumentParser===Donot Touch Me===
+
+   from argparse import ArgumentParser
+    parser = ArgumentParser(description='convert chinese to pinyin.')
+    parser.add_argument('-V', '--version', action='version',
+                        version='{0} {1}'.format(__title__, __version__))
+
+   parser = get_parser()
+   args = sys.argv[1:]
+   options = parser.parse_args(args)
+end------------------------------------------------------------------------>
