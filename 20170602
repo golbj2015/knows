@@ -35,3 +35,10 @@ python|命令行参数|ArgumentParser===Donot Touch Me===
    args = sys.argv[1:]
    options = parser.parse_args(args)
 end------------------------------------------------------------------------>
+
+start---------------------------------------------------------------------->
+190241
+python|规则引擎===Donot Touch Me===
+    https://github.com/venmo/business-rules
+    https://github.com/nemonik/Intellect
+end------------------------------------------------------------------------>
