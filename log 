@@ -1,3 +1,6 @@
-IT名词|payload|有效负载
+vim|去重
 
-  https://undefinedblog.com/something-about-payload/
+vim中我们也可以删除重复行
+
+ :sort   //可以直接排序，这个太好用了
+:g/^\(.*\)$\n\1$/d 
