@@ -1,6 +1,6 @@
-vim|去重
+python|性能检测|cprofile
 
-vim中我们也可以删除重复行
+python -m cProfile -s cumulative timing_functions.py
 
- :sort   //可以直接排序，这个太好用了
-:g/^\(.*\)$\n\1$/d 
+
+
